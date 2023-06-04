@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 
 import Loading from './loading';
 import CourseSearch from '@/components/CourseSearch';
+import Courses from '@/components/Courses';
 
 const Home = () => {
   const [courses, setCourses] = useState([]);
