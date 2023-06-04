@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaCodeBranch, FaStar } from 'react-icons/fa';
+import { FaCodeBranch, FaEye, FaStar } from 'react-icons/fa';
 
 async function fetchRepos() {
   const res = await fetch('https://api.github.com/users/esteemayo/repos');
