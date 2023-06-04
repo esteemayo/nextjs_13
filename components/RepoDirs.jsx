@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 async function fetchRepoContents(name) {
   await new Promise((resolve) => setTimeout(resolve, 3000));
 
