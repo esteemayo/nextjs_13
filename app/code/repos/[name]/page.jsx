@@ -1,4 +1,4 @@
-import Repo from "@/components/Repo";
+import Repo from '@/components/Repo';
 
 const RepoPage = ({ params: { name } }) => {
   return (
