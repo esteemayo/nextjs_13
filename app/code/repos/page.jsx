@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 import { FaCodeBranch, FaEye, FaStar } from 'react-icons/fa';
 
 async function fetchRepos() {
