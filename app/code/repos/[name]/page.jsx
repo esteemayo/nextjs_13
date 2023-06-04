@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Suspense } from 'react';
 
 import Repo from '@/components/Repo';
 import RepoDirs from '@/components/RepoDirs';
