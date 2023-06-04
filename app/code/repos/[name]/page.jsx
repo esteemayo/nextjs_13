@@ -13,7 +13,9 @@ const RepoPage = ({ params: { name } }) => {
       <Suspense fallback='loading repo...'>
         <Repo name={name} />
       </Suspense>
-      <RepoDirs name={name} />
+      <Suspense fallback={<div>loading directories...</div>}>
+        <RepoDirs name={name} />
+      </Suspense>
     </div>
   );
 }
