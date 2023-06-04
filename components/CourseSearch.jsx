@@ -1,10 +1,14 @@
 import { useState } from 'react';
 
-const CourseSearch = () => {
+const CourseSearch = ({ getSearchResults }) => {
   const [query, setQuery] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const res = await fetch(`/api/courses/search?query=${query}`);
+    const courses = await res.json();
+    getSearchResults(courses);
   };
 
   return (
