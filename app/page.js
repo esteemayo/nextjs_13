@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 
 import Loading from './loading';
-import Courses from '@/components/Courses';
 import CourseSearch from '@/components/CourseSearch';
 
 const Home = () => {
