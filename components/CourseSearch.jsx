@@ -14,7 +14,6 @@ const CourseSearch = () => {
         className='search-input'
         value={query}
         placeholder='Search Courses...'
-        value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
       <button className='search-button' type='submit'>
