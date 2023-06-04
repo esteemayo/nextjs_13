@@ -9,4 +9,4 @@ const RepoPage = ({ params: { name } }) => {
   );
 }
 
-export default Repo;
+export default RepoPage;
