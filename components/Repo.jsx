@@ -1,6 +1,12 @@
+async function fetchRepo(name) {
+  const res = await fetch(`http://api.github.com/repos/esteemayo/${name}`);
+  const repo = await res.json();
+  return repo;
+}
 
+const Repo = async ({ name }) => {
+  const repo = await fetchRepo(name);
 
-const Repo = () => {
   return (
     <div>Repo</div>
   );
