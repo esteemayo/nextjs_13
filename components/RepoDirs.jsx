@@ -3,7 +3,11 @@ import Link from 'next/link';
 async function fetchRepoContents(name) {
   await new Promise((resolve) => setTimeout(resolve, 3000));
 
-  const res = await fetch(`http://api.github.com/repos/esteemayo/${name}/contents`);
+  const res = await fetch(`http://api.github.com/repos/esteemayo/${name}/contents`, {
+    next: {
+      revalidate: 60,
+    },
+  });
   const contents = await res.json();
   return contents;
 }
