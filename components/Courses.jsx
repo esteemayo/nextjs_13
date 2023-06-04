@@ -12,6 +12,7 @@ const Courses = async () => {
   return (
     <div className='courses'>
       {courses.map((course) => {
+        const { id, title, level, description, link } = course;
         return (
           <div key={course.id} className='card'>
             <h2>{course.title}</h2>
