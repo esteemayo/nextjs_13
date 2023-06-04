@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Repo from '@/components/Repo';
 
 const RepoPage = ({ params: { name } }) => {
