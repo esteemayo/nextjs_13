@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 
 import Courses from '@/components/Courses';
-import Loading from './loading';
 
 const Home = () => {
   const [courses, setCourses] = useState([]);
