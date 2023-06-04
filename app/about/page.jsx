@@ -7,9 +7,12 @@ const About = () => {
     <div>
       <h1>About Esteem Designs</h1>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem maiores dolorem facere velit non facilis, sed nobis ex quod suscipit voluptatem minima et veritatis, incidunt fugiat reiciendis dolorum amet molestias!
-        Quia, ipsam. Dicta error nobis modi veniam? Mollitia, nostrum, consectetur minima error eius ea sint perspiciatis quo eum dicta porro autem vel ad rem consequatur expedita. Quidem, modi. Magni, pariatur.
-        Voluptatibus, officiis! Unde eveniet ullam voluptate a itaque id cum? Doloremque, minima architecto ratione sint corrupti ipsam mollitia commodi assumenda voluptates, tempore iste veritatis repellat pariatur itaque quas eius illum.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
+        molestiae ipsam, et aut consequatur ipsum voluptates quasi, quos
+        recusandae doloribus provident consequuntur amet nobis est voluptate
+        perferendis quaerat distinctio saepe dolores perspiciatis ex ab nostrum
+        eaque! Porro perspiciatis possimus, sed a quidem sunt sit doloremque
+        molestiae maiores blanditiis quasi quod.
       </p>
     </div>
   );
