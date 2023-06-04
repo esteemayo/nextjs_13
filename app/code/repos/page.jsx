@@ -15,6 +15,7 @@ const Repos = async () => {
       <h2>Repositories</h2>
       <ul className='repo-list'>
         {repos.map((repo) => {
+          const { id, name, description, stargazers_count, forks_count, watchers_count } = repo;
           return (
             <li key={repo.id}>
               <Link href={`/code/repos/${encodeURIComponent(repo.name)}`}>
