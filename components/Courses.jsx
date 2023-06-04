@@ -6,7 +6,9 @@ async function fetchCourses() {
   return courses;
 }
 
-const Courses = () => {
+const Courses = async () => {
+  const courses = await fetchCourses();
+
   return (
     <div>Courses</div>
   );
