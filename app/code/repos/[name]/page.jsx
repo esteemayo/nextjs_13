@@ -9,6 +9,7 @@ const RepoPage = ({ params: { name } }) => {
         Back To Repositories
       </Link>
       <Repo name={name} />
+      <RepoDirs name={name} />
     </div>
   );
 }
