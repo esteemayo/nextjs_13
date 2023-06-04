@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <>
       <h1>Welcome to Esteem Designs</h1>
-      <CourseSearch />
+      <CourseSearch getSearchResults={(results) => setCourses(results)} />
       <Courses courses={courses} />
     </>
   );
