@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { FaCodeBranch, FaEye, FaStar } from 'react-icons/fa';
 
 async function fetchRepo(name) {
   const res = await fetch(`http://api.github.com/repos/esteemayo/${name}`);
