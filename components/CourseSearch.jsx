@@ -8,7 +8,18 @@ const CourseSearch = () => {
   };
 
   return (
-    <div>CourseSearch</div>
+    <form onSubmit={handleSubmit} className='search-form'>
+      <input
+        type='text'
+        className='search-input'
+        placeholder='Search Courses...'
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+      <button className='search-button' type='submit'>
+        Search
+      </button>
+    </form>
   );
 }
 
