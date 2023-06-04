@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 async function fetchRepos() {
   const res = await fetch('https://api.github.com/users/esteemayo/repos');
   const repos = await res.json();
