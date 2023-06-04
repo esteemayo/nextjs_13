@@ -17,19 +17,19 @@ const Repos = async () => {
         {repos.map((repo) => {
           const { id, name, description, stargazers_count, forks_count, watchers_count } = repo;
           return (
-            <li key={repo.id}>
-              <Link href={`/code/repos/${encodeURIComponent(repo.name)}`}>
-                <h3>{repo.name}</h3>
-                <p>{repo.description}</p>
+            <li key={id}>
+              <Link href={`/code/repos/${encodeURIComponent(name)}`}>
+                <h3>{name}</h3>
+                <p>{description}</p>
                 <div className='repo-details'>
                   <span>
-                    <FaStar /> {repo.stargazers_count}
+                    <FaStar /> {stargazers_count}
                   </span>
                   <span>
-                    <FaCodeBranch /> {repo.forks_count}
+                    <FaCodeBranch /> {forks_count}
                   </span>
                   <span>
-                    <FaEye /> {repo.watchers_count}
+                    <FaEye /> {watchers_count}
                   </span>
                 </div>
               </Link>
