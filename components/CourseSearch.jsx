@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 const CourseSearch = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
